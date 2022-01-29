@@ -1,4 +1,4 @@
-
+package org.golem.benchmark_kt
 
 sealed class BenchmarkType{
     /**
