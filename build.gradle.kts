@@ -32,7 +32,6 @@ publishing {
     publications {
         create<MavenPublication>("default") {
             from(components["java"])
-            // Include any other artifacts here, like javadocs
         }
     }
 
