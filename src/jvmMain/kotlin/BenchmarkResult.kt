@@ -1,3 +1,5 @@
+package org.golem.benchmark_kt
+
 /**
  * The BenchmarkResult data class consists of:
  * - The targeted benchmark
