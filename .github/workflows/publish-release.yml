@@ -1,11 +1,11 @@
-name: Publish release
+name: Publish release to GitHub Packages
 
 on:
   release:
-    types: [published]
+    types: [created]
 
 jobs:
-  publish-release:
+  publish:
     runs-on: ubuntu-latest
 
     steps:
