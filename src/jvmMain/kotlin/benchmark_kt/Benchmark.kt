@@ -1,4 +1,4 @@
-package org.golem.benchmark_kt
+package benchmark_kt
 
 import java.text.SimpleDateFormat
 import java.util.*
