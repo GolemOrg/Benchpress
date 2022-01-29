@@ -1,9 +1,7 @@
 plugins {
     kotlin("multiplatform") version "1.5.31"
+    `maven-publish`
 }
-
-group = "me.matt"
-version = "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
@@ -23,6 +21,27 @@ kotlin {
         val jvmTest by getting {
             dependencies {
                 implementation(kotlin("test"))
+            }
+        }
+    }
+}
+
+
+publishing {
+    publications {
+        create<MavenPublication>("default") {
+            from(components["java"])
+            // Include any other artifacts here, like javadocs
+        }
+    }
+
+    repositories {
+        maven {
+            name = "GitHubPackages"
+            url = uri("https://maven.pkg.github.com/GolemOrg/benchmark-kt")
+            credentials {
+                username = System.getenv("GITHUB_ACTOR")
+                password = System.getenv("GITHUB_TOKEN")
             }
         }
     }
