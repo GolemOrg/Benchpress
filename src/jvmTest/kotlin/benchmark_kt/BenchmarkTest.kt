@@ -1,4 +1,4 @@
-package org.golem.benchmark_kt
+package benchmark_kt
 
 // TODO: Replace with better unit testing
 fun main() {
