@@ -4,7 +4,7 @@ A small benchmarking library built in Kotlin
 
 ## Benchmark Types
  - `BenchmarkType.Single` - This runs each of the benchmark target once (This should mainly be used for operations like I/O, REST, etc.)
- - `BenchmarkType.Timed(milliseconds: Long) - This runs each target for `milliseconds` milliseconds.
+ - `BenchmarkType.Timed(milliseconds: Long)` - This runs each target for `milliseconds` milliseconds.
  - `BenchmarkType.Iterations(iterations: Int)` - This runs each target for `iterations` iterations
 
 ## Benchmark Targets
