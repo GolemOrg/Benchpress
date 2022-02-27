@@ -30,8 +30,10 @@ kotlin {
 
 publishing {
     publications {
-        create<MavenPublication>("default") {
+        create<MavenPublication>("gpr") {
             from(components["java"])
+            groupId = groupId
+            version = version
         }
     }
 
