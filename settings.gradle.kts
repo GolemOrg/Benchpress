@@ -1,3 +1,3 @@
 
-rootProject.name = "benchmark-kt"
+rootProject.name = "benchpress"
 

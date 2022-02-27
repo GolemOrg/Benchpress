@@ -1,4 +1,4 @@
-package org.golem.benchmark
+package org.golem.benchpress
 
 // TODO: Replace with better unit testing
 fun main() {

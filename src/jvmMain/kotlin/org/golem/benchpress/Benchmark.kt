@@ -1,4 +1,4 @@
-package org.golem.benchmark
+package org.golem.benchpress
 
 import java.text.SimpleDateFormat
 import java.util.*
