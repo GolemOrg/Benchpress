@@ -30,13 +30,12 @@ kotlin {
 
 publishing {
     publications {
-        create<MavenPublication>("gpr") {
+        register<MavenPublication>("gpr") {
             from(components["java"])
             groupId = groupId
             version = version
         }
     }
-
     repositories {
         maven {
             name = "GitHubPackages"
