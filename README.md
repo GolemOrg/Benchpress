@@ -1,4 +1,4 @@
-# benchmark-kt
+# Benchpress
 A small benchmarking library built in Kotlin
 
 
